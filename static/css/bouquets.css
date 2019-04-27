@@ -1,0 +1,12 @@
+h1 {
+  margin-top: 80px;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Merriweather, "Helvetica Neue", Arial, sans-serif;
+}

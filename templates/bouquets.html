@@ -1,0 +1,94 @@
+<!DOCTYPE>
+<html>
+  <head>
+  <title>Personalised Bouquets by Flowery</title>
+  <link rel="stylesheet" href="static/css/bouquets.css">
+  <link href="static/css/landingpage.css" type="text/css" rel="stylesheet"/>
+  <link href="static/css/bootstrap.css" rel="stylesheet">
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+  </script>
+  <script src="static/js/bootstrap.js"></script>
+  </head>
+
+<body background="static/images/flowers17.jpg">
+   <header>
+    <!--Tabs-->
+     <div class="topnav" style="background-color: white; z-index:999; position: fixed; top: 0; margin-left:0;">
+        <div class="navtabs">
+          <a class="navlogo" href="http://127.0.0.1:5000/" style="font-size: 20pt; font-weight: bolder; padding-top: 10px;"><u>Flowery</u> &#127799;</a>
+          <a class="home" href="http://127.0.0.1:5000/" style="background-color: white;">Home</a>
+          <a href="http://127.0.0.1:5000/#whatwedo">What we do</a>
+          <a href="http://127.0.0.1:5000/#ourproducts">Our Products</a>
+          <a class="order" href="bouquets" style="background-color: #ddd;">Make an Order</a>
+          <a href="http://127.0.0.1:5000/#getintouch">Want to get in touch?</a>
+        </div>
+      </div>
+  </header>
+    <!-- {% if occasions %}
+      <h1>Flowers for {{occasions}}</h1>
+    {% else %}
+      <p>Not a Valid Page</p>
+    {% endif %} -->
+
+  <h1>Personalised Bouquets by Flowery</h1>
+  <div id="bouquets-form">
+    <h2>Order with Flowery</h2>
+    <form action="/order" method="post">
+      <fieldset>
+        <legend>Select a colour theme</legend>
+        <!-- <input type="radio" name="palette" value="soft_subtle"> <img src="static/images/soft_subtle.jpg" alt="" height="40" width="200"><br> -->
+        <input type="radio" name="palette" value="beautiful_blue"> <img src="static/images/beautiful_blue.jpg" alt="" height="40" width="200"><br>
+        <input type="radio" name="palette" value="colour_pop"> <img src="static/images/colour_pop.jpg" alt="" height="40" width="200"><br>
+        <input type="radio" name="palette" value="red"> <img src="static/images/red.jpg" alt="" height="40" width="200"><br>
+        <input type="radio" name="palette" value="pastel_perfection"> <img src="static/images/pastel_perfection.jpg" alt="" height="40" width="200"><br>
+        <input type="radio" name="palette" value="pretty_pink"> <img src="static/images/pretty_pink.jpg" alt="" height="40" width="200"><br><br>
+      </fieldset>
+      <fieldset>
+        <legend>Select your choice of flowers</legend>
+        <input type="radio" name="flower_type" value="rose"> Roses<br>
+        <input type="radio" name="flower_type" value="lily"> Lilies<br>
+        <input type="radio" name="flower_type" value="orchid"> Orchids<br>
+        <input type="radio" name="flower_type" value="daisy"> Daisies<br>
+        <input type="radio" name="flower_type" value="tulip"> Tulips<br>
+        <input type="radio" name="flower_type" value="combo"> Combination<br><br>
+      </fieldset>
+      <fieldset>
+        <legend>Select your greenery</legend>
+        <input type="radio" name="foliage_type" value="myrtle"> Myrtle<br>
+        <input type="radio" name="foliage_type" value="lemonleaf"> Lemon Leaf<br>
+        <input type="radio" name="foliage_type" value="fern"> Fern<br>
+        <input type="radio" name="foliage_type" value="eucalyptus"> Eucalyptus<br><br>
+      </fieldset>
+      <fieldset>
+        <legend>Add a message</legend>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea class="form-control" rows="5" id="message"></textarea>
+        </div>
+     </label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit-button">
+    </form>
+  </div>
+
+  <!-- <div id="contact-form">
+      <form method="post" action="/signup">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required="required">
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required="required">
+          <label for="email">Email address:</label>
+          <input type="email" id="email" name="email" required="required">
+          <br>
+          <input type="submit" value="Submit" id="submit-button">
+      </form>
+  </div> -->
+  </body>
+
+
+
+</html>

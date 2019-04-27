@@ -1,0 +1,27 @@
+h1 {
+  margin-top: 80px;
+}
+
+body, html {
+  height: 100%;
+  background-image: url("./static/images/flowers17.jpg");
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  background-image: image("./static/images/flowers17.jpg");
+  font-family: Merriweather, "Helvetica Neue", Arial, sans-serif;
+}

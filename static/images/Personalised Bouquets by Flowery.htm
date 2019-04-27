@@ -1,0 +1,103 @@
+
+<!-- saved from url=(0030)http://127.0.0.1:5000/bouquets -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Personalised Bouquets by Flowery</title>
+  <link rel="stylesheet" href="./Personalised Bouquets by Flowery_files/bouquets.css">
+  <link href="./Personalised Bouquets by Flowery_files/landingpage.css" type="text/css" rel="stylesheet">
+  <link href="./Personalised Bouquets by Flowery_files/bootstrap.css" rel="stylesheet">
+
+  <script src="./Personalised Bouquets by Flowery_files/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+  </script>
+  <script src="./Personalised Bouquets by Flowery_files/bootstrap.js"></script>
+  </head>
+
+<body background="./Personalised Bouquets by Flowery_files/flowers17.jpg" class="vsc-initialized">
+   <header>
+    <!--Tabs-->
+     <div class="topnav" style="background-color: white; z-index:999; position: fixed; top: 0; margin-left:0;">
+        <div class="navtabs">
+          <a class="navlogo" href="http://127.0.0.1:5000/" style="font-size: 20pt; font-weight: bolder; padding-top: 10px;"><u>Flowery</u> 🌷</a>
+          <a class="home" href="http://127.0.0.1:5000/" style="background-color: white;">Home</a>
+          <a href="http://127.0.0.1:5000/#whatwedo">What we do</a>
+          <a href="http://127.0.0.1:5000/#ourproducts">Our Products</a>
+          <a class="order" href="http://127.0.0.1:5000/bouquets" style="background-color: #ddd;">Make an Order</a>
+          <a href="http://127.0.0.1:5000/#getintouch">Want to get in touch?</a>
+        </div>
+      </div>
+  </header>
+    <!-- 
+      <p>Not a Valid Page</p>
+     -->
+
+  <h1>Personalised Bouquets by Flowery</h1>
+  <div class="bg">
+    <div id="bouquets-form">
+      Please fill out the form:
+      <form action="http://127.0.0.1:5000/bouquets" method="post">
+        <fieldset>
+          <legend>
+            Please select a colour palette
+          </legend>
+          <input type="radio" name="palette" class="sr-only" id="soft_subtle">
+          <label for="soft_subtle">
+            <img src="./Personalised Bouquets by Flowery_files/soft_subtle.jpg" alt="soft_subtle" height="40" width="200">
+          </label>
+          <input type="radio" name="palette" class="sr-only" id="beautiful_blue">
+          <label for="beautiful_blue">
+            <img src="./Personalised Bouquets by Flowery_files/beautiful_blue.jpg" alt="beautiful_blue" height="40" width="200">
+          </label>
+          <input type="radio" name="palette" class="sr-only" id="colour_pop">
+          <label for="colour_pop">
+            <img src="./Personalised Bouquets by Flowery_files/colour_pop.jpg" alt="colour_pop" height="40" width="200">
+          </label>
+          <input type="radio" name="palette" class="sr-only" id="pastel_perfection">
+          <label for="pastel_perfection">
+            <img src="./Personalised Bouquets by Flowery_files/pastel_perfection.jpg" alt="pastel_perfection" height="40" width="200">
+          </label>
+          <input type="radio" name="palette" class="sr-only" id="pretty_pink">
+          <label for="pretty_pink">
+            <img src="./Personalised Bouquets by Flowery_files/pretty_pink.jpg" alt="pretty_pink" height="40" width="200">
+          </label>
+          <input type="radio" name="palette" class="sr-only" id="red">
+          <label for="red">
+            <img src="./Personalised Bouquets by Flowery_files/red.jpg" alt="red" height="40" width="200">
+          </label>
+          <input type="radio" name="palette" class="sr-only" id="other_palette">
+          <label for="other_palette">
+            Other
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Please select which flowers you would like</legend>
+          <input type="checkbox" name="flower_type" value="rose"> Roses<br>
+          <input type="checkbox" name="flower_type" value="lily"> Lilies<br>
+          <input type="checkbox" name="flower_type" value="orchid"> Orchids<br>
+          <input type="checkbox" name="flower_type" value="daisy"> Daisies<br>
+          <input type="checkbox" name="flower_type" value="hydrangea"> Hydrangeas<br>
+          <input type="checkbox" name="flower_type" value="tulip"> Tulips<br>
+          <input type="checkbox" name="flower_type" value="chrysanthemum"> Chrysanthemums<br>
+          <input type="checkbox" name="flower_type" value="daffodil"> Daffodils<br>
+        </fieldset>
+      </form>
+    </div>
+
+    <div id="contact-form">
+        <form method="post" action="http://127.0.0.1:5000/signup">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required="required">
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required="required">
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" required="required">
+            <br>
+            <input type="submit" value="Submit" id="submit-button">
+        </form>
+    </div>
+  </div>
+
+  
+<p>Let's keep in touch!</p>
+
+
+
+</body></html>

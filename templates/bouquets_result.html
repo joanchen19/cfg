@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+  <head>
+  <title>Personalised Bouquets by Flowery</title>
+  <link rel="stylesheet" href="static/css/bouquets.css">
+  <link href="static/css/landingpage.css" type="text/css" rel="stylesheet"/>
+  <link href="static/css/bootstrap.css" rel="stylesheet">
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+  </script>
+  <script src="static/js/bootstrap.js"></script>
+  </head>
+
+<body background="static/images/flowers17.jpg">
+   <header>
+    <!--Tabs-->
+     <div class="topnav" style="background-color: white; z-index:999; position: fixed; top: 0; margin-left:0;">
+        <div class="navtabs">
+          <a class="navlogo" href="http://127.0.0.1:5000/" style="font-size: 20pt; font-weight: bolder; padding-top: 10px;"><u>Flowery</u> &#127799;</a>
+          <a class="home" href="http://127.0.0.1:5000/" style="background-color: white;">Home</a>
+          <a href="http://127.0.0.1:5000/#whatwedo">What we do</a>
+          <a href="http://127.0.0.1:5000/#ourproducts">Our Products</a>
+          <a class="order" href="bouquets" style="background-color: #ddd;">Make an Order</a>
+          <a href="http://127.0.0.1:5000/#getintouch">Want to get in touch?</a>
+        </div>
+      </div>
+  </header>
+
+  <h1>Personalised Bouquets by Flowery</h1>
+
+    <h2>Flowery has generated your bouquet</h2>
+    {% if bouquet %}
+    <div class="centre" align="center"><img  src="./static/images/{{bouquet}}" alt=""></div>
+    {% else %}
+    <p>"Unfortunately, we were unable to find you a matching bouquet"</p>
+    {% endif %}
+    <div class="row" align="center">If you are happy with your bouquet, please fill out your contact details and we will send you a confirmation email.</div>
+    <div id="contact-form" align="center">
+    <form action="/submitted-order" method="post">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required="required">
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required="required">
+          <label for="email">Email address:</label>
+          <input type="email" id="email" name="email" required="required">
+          <br>
+          <input type="submit" value="Submit" id="submit-button">
+      </form>
+  </div>
+  </body>
+
+
+</html>
